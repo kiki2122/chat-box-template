@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@300&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    padding-bottom: 50%;
+}
+
+#container{
+    width: 45%;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    margin-bottom: 10%;
+    background:whitesmoke;
+    box-shadow: 10px 5px 8px black;
+    border: solid 10px rgb(209, 206, 206);
+}
+
+.content ul{
+    list-style: none;
+}
+
+.content .flex{
+    display: flex;   
+}
+
+.content .flex li .chat, .content .flex li .chat2, .content .flex li .chat3{
+    background: rgb(37, 145, 112);
+    margin-left: 5%;
+    border-radius: 10px;
+    line-height: 30px;
+}
+
+.content .flex li .chat{
+    width: 100%;
+}
+
+.content .flex li .chat2{
+    width: 89%;
+}
+
+.content .flex li .chat3{
+    width: 81%;
+}
+
+img{
+    cursor: pointer;
+}
+
+.txt-clr{
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+.content .flex li img{
+    width: 60px;
+    border-radius: 30px;
+    margin-top: -5%;
+}
+
+#modal1-container,#modal2-container,#modal3-container,#modal4-container,#modal5-container{
+    display: none;
+}
+
+#modal{
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    width: 25%;
+    background: rgb(196, 193, 193);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 10px 7px black;
+}
+
+#modal span{
+    position: absolute;
+    right: 1%;
+    top: 0%;
+    cursor: pointer;
+}
+
+#modal img{
+    margin-top: 6%;
+    width: 40%;
+}
+
+.footer{
+    background: crimson;
+    margin-bottom: -3.5%;
+}
+
+.footer ul{
+    list-style: none;
+    display: flex;
+    padding: 4%;
+}
+
+.footer ul li {
+    padding-left: 3%;
+}
+
+.footer ul li input{
+    width: 170%;
+    height: 150%;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+}
+
+.footer ul li button{
+    margin-left: 340%;
+    height: 150%;
+    width: 150%;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    background: rgb(67, 138, 231);
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:425px){
+    #container{
+        width: 97%;
+        left: 1%;
+        right: 2%;
+    }
+
+    #container .content .flex li ul {
+        width: 60%;
+    }
+
+    .footer ul li input{
+        width: 120%;
+    }
+
+    .footer ul li button{
+        margin-left: 100%;
+    }
+
+    #modal{
+        width: 50%;
+        left: 25%;
+        top: 50%;
+    }
+}
+
+@media only screen and (min-width:426px) and (max-width:768px){
+    #container{
+        width: 80%;
+        left: 6%;
+    }
+
+    .footer ul li input{
+        width: 160%;
+    }
+
+    .footer ul li button{
+        margin-left: 270%;
+    }
+
+    #modal{
+        top: 50%;
+        width: 50%;
+        left: 20%;
+    }
+}
+
+/* @media only screen and (min-width:769px) and (max-width:1024px){
+    #container{
+        width: 60%;
+        left:20%;
+    }
+    #modal{
+        top: 50%;
+        width: 25%;
+        left: 37%;
+    }
+} */
